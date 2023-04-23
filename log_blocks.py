@@ -13,6 +13,9 @@ url = f"https://minaexplorer.com/all-blocks/{validator_address}?canonical=False&
 
 # set the log file name
 log_file_name = os.getenv("LOG_FILE_NAME")
+directory_path = os.path.dirname(log_file_name)
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
 
 # set the list of fields to output to the log file
 fields_to_output = ["DateTime", "Epoch", "Slot", "BlockchainLength", "Transactions", "Coinbase", "StateHash", "BuiltOn"]
