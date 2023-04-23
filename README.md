@@ -14,7 +14,7 @@ Install python and pip
 
 Before running the script, ensure that you have installed the required modules by running `pip install -r requirements.txt`. 
 
-Next, set the following environment variables in a `.env` file:
+Next, сopy `.env.sample` to `.env` and set the following environment variables in a `.env` file:
 
 - `VALIDATOR_ADDRESS`: the validator address for which to retrieve the blocks data
 - `LOG_FILE_NAME`: the name of the log file to which the data will be logged
